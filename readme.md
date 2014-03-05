@@ -16,6 +16,13 @@ Run these commands in terminal to setup:
 `rake db:migrate`
 `shotgun`
 
+On different tab, run Redis
+`redis-server`
+Open different tab, run
+`redis-cli` and make sure you get 127.0.0.1 (localhost)
+`bundle exec sidekiq -r./config/environment.rb`
+
+
 Goal: learn about OAuth v1.
 
 * Twitter OAuth docs: https://dev.twitter.com/docs/auth/oauth

@@ -10,7 +10,7 @@ gem 'sinatra'
 gem 'thin'
 
 gem 'activesupport'
-gem 'activerecord'
+gem 'activerecord', '~> 4.0'
 
 gem 'rake'
 
@@ -18,6 +18,9 @@ gem 'shotgun'
 
 gem 'oauth'
 gem 'twitter'
+
+gem 'sidekiq'
+gem 'redis'
 
 group :test do
   gem 'faker'

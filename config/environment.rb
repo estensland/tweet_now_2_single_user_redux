@@ -23,6 +23,9 @@ require 'erb'
 require 'oauth'
 require 'twitter'
 
+require 'redis'
+require 'sidekiq'
+
 # Some helper constants for path-centric logic
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 
@@ -43,7 +46,14 @@ env_config.each do |key, value|
   ENV[key] = value
 end
 
-Twitter.configure do |config|
-  config.consumer_key = ENV['TWITTER_KEY']
-  config.consumer_secret = ENV['TWITTER_SECRET']
+# Twitter.configure do |config|
+#   config.consumer_key = ENV['TWITTER_KEY']
+#   config.consumer_secret = ENV['TWITTER_SECRET']
+# end
+
+Twitter::REST::Client.new do |config|
+  config.consumer_key         = ENV["consumer_key"]
+  config.consumer_secret      = ENV["consumer_secret"]
+  config.access_token         = ENV["access_token"]
+  config.access_token_secret  = ENV["oauth_token_secret"]
 end
