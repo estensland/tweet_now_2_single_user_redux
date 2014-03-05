@@ -1,0 +1,65 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  /*border: 1px dotted black;*/
+}
+
+th {
+  text-align: left;
+}
+
+.footer {
+  margin: 20px auto;
+  width: 600px;
+  /*text-align: center;*/
+  opacity: 0.8  ;
+}
+
+.footer a {
+  text-decoration: none;
+  color: orange;
+}
+.footer a:hover {
+  color: orange;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4em;
+  font-weight: 100;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+#tweet-input {
+  width: 20em;
+  padding: 0.5em;
+  border: 1px solid gray;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid gray;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  padding: 0.5em;
+}
+
+button a {
+  text-decoration: none;
+}
+
+/*
+available font weights:
+100,100italic,300,300italic,400,400italic,
+500,500italic,700,700italic,900,900italic
+*/
