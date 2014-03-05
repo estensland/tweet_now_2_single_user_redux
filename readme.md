@@ -6,11 +6,14 @@ Tweet as yourself using this telenovela-themed twitter app. Excellente.
 Includes local `jQuery` and `jQuery UI` library.
 
 After cloning to local store:
+
 Decrypt / decompress `credentials.tc` into `/config`
 
 Caution: don't run `bundle update`. Seems to interfere with some gems.
 
 Run these commands in terminal to setup:
+`rake db:generate`
+`rake db:migrate`
 `shotgun`
 
 Goal: learn about OAuth v1.
