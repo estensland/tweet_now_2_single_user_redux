@@ -12,6 +12,7 @@ $(document).ready(function() {
       url: "/tweet",
       data: { message: sayings }
     }).done(function(msg) {
+      console.log("done message: " + msg)
       $( "#tweet-input" ).animate( { borderColor: "#00FF00" });
       $( "#tweet-input" ).prop( "disabled", false );
 
@@ -27,6 +28,7 @@ $(document).ready(function() {
       type: "GET",
       url: "/status/" + msg,
     }).done(function(twoMsg) {
+      console.log("Second Message: " + twoMsg)
       if (twoMsg === "true") {
       $('.status').append('<p>' + sayings + '</p>')
       stop()
