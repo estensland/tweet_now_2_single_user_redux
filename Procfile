@@ -1,2 +1,3 @@
 web: bundle exec rackup config.ru -p $PORT
-worker: bundle exec sidekiq -r./config/environment.rb
+web: bundle exec unicorn -p $PORT -E $RACK_ENV -c ./config/unicorn.rb
+worker: bundle exec sidekiq -e production -c 4
