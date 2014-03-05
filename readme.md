@@ -1,8 +1,5 @@
-#Tweet Now! 2: Multi-User
-##DBC Challenge 375
-
-#DBC Challenge 313
-##Tweet Now! 1: Single User
+#DBC Challenge 375
+##Tweet Now! 2: Multi-User
 
 Tweet as yourself using this telenovela-themed twitter app. Excellente.
 
@@ -11,9 +8,9 @@ Includes local `jQuery` and `jQuery UI` library.
 After cloning to local store:
 Decrypt / decompress `credentials.tc` into `/config`
 
-Run these commands in terminal to setup:
+Caution: don't run `bundle update`. Seems to interfere with some gems.
 
-`bundle update`
+Run these commands in terminal to setup:
 `shotgun`
 
 Goal: learn about OAuth v1.
@@ -23,9 +20,10 @@ Goal: learn about OAuth v1.
 * Twitter gem sample usage: https://github.com/sferik/twitter/tree/master/examples
 
 Notes:
-Callback URL specified on Twitter Developer Account will be overwritten by the one inside the request token.
+Callback URL specified on Twitter Developer Account will be overwritten by the one inside the request token (provided by the skeleton).
 Credentials are read from `credentials.yaml` file into environment variables, then it is used to instantiate the CLIENT.
-
+The YAML file contains only two items this time: `TWITTER_KEY:` and `TWITTER_SECRET:`
+Encrypted YAML file is provided.
 <hr>
 
 <div class='tab-pane active' id='objectives'>
