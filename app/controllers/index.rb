@@ -45,7 +45,6 @@ end
 post '/tweet' do
   # call helper method
   make_twitter_client
-  200
   # Do API Call
-  # @client.update(params["message"]).text
+  @client.update(params["message"]).text
 end
