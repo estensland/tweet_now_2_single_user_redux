@@ -23,6 +23,7 @@ gem 'sidekiq'
 gem 'redis'
 
 group :test do
+  gem 'rspec'
   gem 'faker'
   gem 'rspec'
 end
