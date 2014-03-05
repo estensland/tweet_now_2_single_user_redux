@@ -1,0 +1,27 @@
+#<OAuth::AccessToken:0x007f8e93508178
+@token="...-...",
+@secret="...",
+@consumer=#<OAuth::Consumer:...
+@key="...",
+@secret="...",
+@options={
+:signature_method=>"HMAC-SHA1",
+:request_token_path=>"/oauth/request_token",
+:authorize_path=>"/oauth/authorize",
+:access_token_path=>"/oauth/access_token",
+:proxy=>nil,
+:scheme=>:header,
+:http_method=>:post,
+:oauth_version=>"1.0",
+:site=>"https://api.twitter.com"},
+@http_method=:post,
+@http=#<Net::HTTP api.twitter.com:443 open=false>>,
+@params={
+:oauth_token=>"...-...",
+"oauth_token"=>"...-...",
+:oauth_token_secret=>"...",
+"oauth_token_secret"=>"...",
+:user_id=>"2191334952",
+"user_id"=>"2191334952",
+:screen_name=>"devdandydanny",
+"screen_name"=>"devdandydanny"}>

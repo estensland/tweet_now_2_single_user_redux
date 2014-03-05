@@ -1,5 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: rgba(0,0,0,0.95);
+  color: white;
 }
 .container {
   margin: 20px auto;
@@ -36,26 +38,33 @@ h1 {
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 100;
 }
 
 #tweet-input {
   width: 20em;
   padding: 0.5em;
-  border: 1px solid gray;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
 }
 
 button {
   background-color: transparent;
-  border: 1px solid gray;
+  border: 1px solid white;
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 100;
   padding: 0.5em;
+  color: white;
 }
 
 button a {
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  color: white;
 }
 
 /*
